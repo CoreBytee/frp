@@ -15,8 +15,8 @@
     "LICENSE"
   ],
   "bin": {
-    "frpc": "./.dist/cli./frpc.js",
-    "frps": "./.dist/cli./frps.js",
+    "frpc": "./.dist/cli/frpc.js",
+    "frps": "./.dist/cli/frps.js",
     "frp": "./.dist/cli/frp.js"
   },
   "scripts": {
