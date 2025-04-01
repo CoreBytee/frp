@@ -4,6 +4,16 @@
   "type": "module",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/CoreBytee/frp",
+  "bugs": {
+    "url": "https://github.com/CoreBytee/frp/issues"
+  },
+  "description": "Easy frp binaries using npm or bun",
+  "files": [
+    ".dist",
+    "README.md",
+    "LICENSE"
+  ],
   "bin": {
     "frpc": "./.binaries/frpc",
     "frps": "./.binaries/frps",
