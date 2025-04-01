@@ -1,5 +1,5 @@
 import terminalSize from "terminal-size";
-import clamp from "./clamp";
+import clamp from "./clamp.js";
 
 export default class ProcessBar {
 	terminalWidth: number;
