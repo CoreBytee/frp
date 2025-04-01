@@ -1,5 +1,6 @@
 {
   "name": "@corebyte/frp",
+  "private": false,
   "module": "./.dist/index.ts",
   "type": "module",
   "version": "1.0.0",
