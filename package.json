@@ -1,0 +1,29 @@
+{
+  "name": "@corebyte/frp",
+  "module": "./.dist/index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "frpc": "./.binaries/frpc",
+    "frps": "./.binaries/frps",
+    "frp": "./.dist/cli.js"
+  },
+  "scripts": {
+    "install": "node ./.dist/install.js",
+    "build": "tsc -d --outDir ./.dist"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "terminal-size": "^4.0.0"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
+}
