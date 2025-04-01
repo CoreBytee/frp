@@ -11,6 +11,7 @@
   },
   "scripts": {
     "install": "node ./.dist/install.js",
+    "prepublishOnly": "bun run build",
     "build": "tsc -d --outDir ./.dist"
   },
   "devDependencies": {
