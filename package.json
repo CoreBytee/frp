@@ -15,9 +15,9 @@
     "LICENSE"
   ],
   "bin": {
-    "frpc": "./.binaries/frpc",
-    "frps": "./.binaries/frps",
-    "frp": "./.dist/cli.js"
+    "frpc": "./.dist/cli./frpc.js",
+    "frps": "./.dist/cli./frps.js",
+    "frp": "./.dist/cli/frp.js"
   },
   "scripts": {
     "install": "node ./.dist/install.js",
