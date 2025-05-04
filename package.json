@@ -3,7 +3,7 @@
 	"private": false,
 	"module": "./.dist/index.ts",
 	"type": "module",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"license": "MIT",
 	"homepage": "https://github.com/CoreBytee/frp",
 	"bugs": {
@@ -29,6 +29,7 @@
 		"typescript": "^5"
 	},
 	"dependencies": {
+		"p-event": "^6.0.1",
 		"terminal-size": "^4.0.0"
 	},
 	"trustedDependencies": ["@biomejs/biome"]

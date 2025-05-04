@@ -7,6 +7,7 @@ import {
 } from "./utilities/downloadConstants.js";
 import downloadFile from "./utilities/downloadFile.js";
 import unzip from "./utilities/unzip.js";
+import { exists } from "node:fs/promises";
 
 const GITHUB_BASE_URL = "https://github.com/";
 const GITHUB_REPO = "fatedier/frp";
@@ -22,7 +23,15 @@ const OUTPUT_FILE = join(OUTPUT_DIRECTORY, GITHUB_FILE);
 
 mkdirSync(OUTPUT_DIRECTORY, { recursive: true });
 await downloadFile(DOWNLOAD_URL, OUTPUT_FILE);
-unzip(OUTPUT_FILE, OUTPUT_DIRECTORY);
+
+if (!(await exists(OUTPUT_FILE))) {
+	console.error(
+		"The downloaded file was not found. Was it removed by the antivirus?",
+	);
+	process.exit(1);
+}
+
+await unzip(OUTPUT_FILE, OUTPUT_DIRECTORY);
 
 if (archiveType() === "zip") {
 	renameSync(
@@ -52,5 +61,4 @@ renameSync(
 );
 
 rmSync(OUTPUT_EXTRACTED_DIRECTORY, { recursive: true, force: false });
-
 rmSync(OUTPUT_FILE, { recursive: true, force: false });
