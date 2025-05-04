@@ -1,6 +1,6 @@
+import { appendFileSync } from "node:fs";
 import { basename } from "node:path";
 import ProcessBar from "./ProcessBar.js";
-import { appendFileSync } from "node:fs";
 
 export default async function downloadFile(url: string, output: string) {
 	const base = basename(output);

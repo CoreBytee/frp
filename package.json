@@ -1,41 +1,35 @@
 {
-  "name": "@corebyte/frp",
-  "private": false,
-  "module": "./.dist/index.ts",
-  "type": "module",
-  "version": "1.0.1",
-  "license": "MIT",
-  "homepage": "https://github.com/CoreBytee/frp",
-  "bugs": {
-    "url": "https://github.com/CoreBytee/frp/issues"
-  },
-  "description": "Easy frp binaries using npm or bun",
-  "files": [
-    ".dist",
-    "README.md",
-    "LICENSE"
-  ],
-  "bin": {
-    "frpc": "./.dist/cli/frpc.js",
-    "frps": "./.dist/cli/frps.js",
-    "frp": "./.dist/cli/frp.js"
-  },
-  "scripts": {
-    "install": "node ./.dist/install.js",
-    "prepublishOnly": "bun run build",
-    "build": "tsc -d --outDir ./.dist"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "terminal-size": "^4.0.0"
-  },
-  "trustedDependencies": [
-    "@biomejs/biome"
-  ]
+	"name": "@corebyte/frp",
+	"private": false,
+	"module": "./.dist/index.ts",
+	"type": "module",
+	"version": "1.0.1",
+	"license": "MIT",
+	"homepage": "https://github.com/CoreBytee/frp",
+	"bugs": {
+		"url": "https://github.com/CoreBytee/frp/issues"
+	},
+	"description": "Easy frp binaries using npm or bun",
+	"files": [".dist", "README.md", "LICENSE"],
+	"bin": {
+		"frpc": "./.dist/cli/frpc.js",
+		"frps": "./.dist/cli/frps.js",
+		"frp": "./.dist/cli/frp.js"
+	},
+	"scripts": {
+		"install": "node ./.dist/install.js",
+		"prepublishOnly": "bun run build",
+		"build": "tsc -d --outDir ./.dist"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"terminal-size": "^4.0.0"
+	},
+	"trustedDependencies": ["@biomejs/biome"]
 }

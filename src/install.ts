@@ -1,12 +1,12 @@
 import { mkdirSync, renameSync, rmSync } from "node:fs";
+import { join } from "node:path";
 import {
 	archiveArch,
 	archiveOS,
 	archiveType,
 } from "./utilities/downloadConstants.js";
-import { join } from "node:path";
-import unzip from "./utilities/unzip.js";
 import downloadFile from "./utilities/downloadFile.js";
+import unzip from "./utilities/unzip.js";
 
 const GITHUB_BASE_URL = "https://github.com/";
 const GITHUB_REPO = "fatedier/frp";
